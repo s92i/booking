@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
 import React, { useEffect, useRef } from "react";
 import { useRoute } from "@react-navigation/native";
 import MapView, { Marker } from "react-native-maps";
-import { Pressable } from "react-native";
 
 const MapScreen = () => {
   const route = useRoute();

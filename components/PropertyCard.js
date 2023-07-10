@@ -31,7 +31,7 @@ const PropertyCard = ({
             oldPrice: property.oldPrice,
             newPrice: property.newPrice,
             photos: property.photos,
-            rooms: property.rooms,
+            availableRooms: property.rooms,
             adults: adults,
             children: children,
             rooms: rooms,
@@ -41,7 +41,7 @@ const PropertyCard = ({
       >
         <View>
           <Image
-            style={{ height: height / 4, width: width - 280 }}
+            style={{ height: height / 3.25, width: width - 280 }}
             source={{ uri: property.image }}
           />
         </View>
@@ -64,7 +64,7 @@ const PropertyCard = ({
               marginTop: 7,
             }}
           >
-            <MaterialIcons name="stars" size={24} color="black" />
+            <MaterialIcons name="stars" size={24} color="green" />
             <Text>{property.rating}</Text>
             <View
               style={{
